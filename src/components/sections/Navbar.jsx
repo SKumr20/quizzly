@@ -10,28 +10,33 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
+import Title from "../ui/Title";
+
 const Navbar = () => {
   return (
-    <div className="flex bg-background justify-between p-8">
+    <div className="flex bg-background justify-between items-center p-8">
       <div className="flex justify-center items-center">
+        <Title />
         {/* Visible on bigger devices */}
-        <div className="hidden md:flex justify-center items-center gap-4">
-          <Button variant="ghost" className="text-sm font-light">
+        <div className="hidden md:flex ml-2 justify-center items-center gap-2">
+          <Button variant="ghost" className="text-sm">
             <Link href='/'>
               Home
             </Link>
           </Button>
-          <Button variant="ghost" className="text-sm font-light">
+          <Button variant="ghost" className="text-sm">
             Get Started
           </Button>
-          <Button variant="ghost" className="text-sm font-light">
+          <Button variant="ghost" className="text-sm">
             <Link href='/experience'>
               Experience
             </Link>
           </Button>
-          <ToggleDarkmode />
         </div>
-        
+
+      </div>
+      {/* Right Side Div */}
+      <div className="flex">
         {/* Small device toggle with ToggleDarkmode next to it */}
         <div className="md:hidden flex items-center gap-2">
           <Sheet>
@@ -44,21 +49,21 @@ const Navbar = () => {
               <div className="flex flex-col items-center p-6 w-full mt-5 space-y-4">
                 <Link href='/' className="w-full text-center">
                   <SheetClose asChild>
-                    <Button variant="ghost" className="text-md font-light w-full justify-center">
+                    <Button variant="ghost" className="text-md w-full justify-center">
                       Home
                     </Button>
                   </SheetClose>
                 </Link>
                 
                 <SheetClose asChild>
-                  <Button variant="ghost" className="text-md font-light w-full justify-center">
+                  <Button variant="ghost" className="text-md w-full justify-center">
                     Projects
                   </Button>
                 </SheetClose>
                 
                 <Link href='/experience' className="w-full text-center">
                   <SheetClose asChild>
-                    <Button variant="ghost" className="text-md font-light w-full justify-center">
+                    <Button variant="ghost" className="text-md w-full justify-center">
                       Experience
                     </Button>
                   </SheetClose>
@@ -66,9 +71,10 @@ const Navbar = () => {
               </div>
             </SheetContent>
           </Sheet>
-          <ToggleDarkmode />
         </div>
+        <ToggleDarkmode />
       </div>
+      
     </div>
   );
 };

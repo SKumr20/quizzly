@@ -15,35 +15,34 @@ export default function QuizPage() {
   const [results, setResults] = useState(null);
   const [score, setScore] = useState(null);
 
-  useEffect(() => {
-    async function fetchQuestions() {
-      try {
-        const res = await fetch(`/data/quizzes/${week}.json`);
-        if (!res.ok) throw new Error(`Failed to load ${week}.json`);
+  const fetchQuestions = async () => {
+    try {
+      const res = await fetch(`/data/quizzes/${week}.json`);
+      if (!res.ok) throw new Error(`Failed to load ${week}.json`);
   
-        const data = await res.json();
-        console.log("Fetched quiz data:", data);
+      const data = await res.json();
+      console.log("Fetched quiz data:", data);
   
-        const quizData = data.quizzes.find(q => q.title.toLowerCase() === week.toLowerCase());
+      const quizData = data.quizzes.find(q => q.title.toLowerCase() === week.toLowerCase());
   
-        if (!quizData || !quizData.questions) {
-          throw new Error("Invalid quiz format");
-        }
-  
-        // Shuffle the questions using Fisher-Yates algorithm
-        const shuffledQuestions = [...quizData.questions].sort(() => Math.random() - 0.5);
-  
-        setQuestions(shuffledQuestions);
-      } catch (error) {
-        console.error("Error fetching quiz data:", error);
-        toast(error.message);
-        setQuestions([]);
+      if (!quizData || !quizData.questions) {
+        throw new Error("Invalid quiz format");
       }
-    }
   
+      // Shuffle the questions
+      const shuffledQuestions = [...quizData.questions].sort(() => Math.random() - 0.5);
+  
+      setQuestions(shuffledQuestions);
+    } catch (error) {
+      console.error("Error fetching quiz data:", error);
+      toast(error.message);
+      setQuestions([]);
+    }
+  };
+  
+  useEffect(() => {
     fetchQuestions();
   }, [week]);
-  
   
 
   const handleAnswerSelect = (index, value) => {
@@ -81,6 +80,7 @@ export default function QuizPage() {
     setFinalAnswers(null);
     setResults(null);
     setScore(null);
+    fetchQuestions();
   };
 
   return (

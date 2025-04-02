@@ -25,7 +25,9 @@ const Navbar = () => {
             </Link>
           </Button>
           <Button variant="ghost" className="text-sm">
-            Get Started
+            <Link href='/select-quiz'>
+                Get Started
+            </Link>
           </Button>
           <Button variant="ghost" className="text-sm">
             <Link href='/experience'>

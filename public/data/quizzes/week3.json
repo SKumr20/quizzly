@@ -1,0 +1,69 @@
+{
+  "quizzes": [
+      {
+          "title": "week3",
+          "questions": [
+              {
+                  "index": 1,
+                  "question": "___ is used to identify which potential impacts are relevant to assess. (Fill in the blank)",
+                  "options": ["screening", "scoping", "reporting", "review"],
+                  "correct": "scoping"
+              },
+              {
+                  "index": 2,
+                  "question": "“the potential or capacity of a material to have adverse effects on living organisms” is",
+                  "options": ["vulnerability", "susceptibility", "sustainability", "toxicity"],
+                  "correct": "toxicity"
+              },
+              {
+                  "index": 3,
+                  "question": "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with soil and species of deciduous forest planted again. This is an example of",
+                  "options": ["recovery", "restoration", "enhancement", "replacement"],
+                  "correct": "restoration"
+              },
+              {
+                  "index": 4,
+                  "question": "Hydrocarbons derived from incomplete burning of mineral oils are",
+                  "options": ["petrogenic hydrocarbons", "pyrogenic hydrocarbons", "biogenic hydrocarbons", "chemoenic hydrocarbons"],
+                  "correct": "pyrogenic hydrocarbons"
+              },
+              {
+                  "index": 5,
+                  "question": "A deciduous forest in Madhya Pradesh was converted to a mine. After the mining operations were over, the pits were filled up with water and a lake was created. It is now visited by several migratory birds. This is an example of",
+                  "options": ["recovery", "restoration", "enhancement", "replacement"],
+                  "correct": "replacement"
+              },
+              {
+                  "index": 6,
+                  "question": "“the relative effect of exposure” is",
+                  "options": ["vulnerability", "sensitivity", "sustainability", "toxicity"],
+                  "correct": "sensitivity"
+              },
+              {
+                  "index": 7,
+                  "question": "___ determines which projects or developments require a full or partial impact assessment study. (Fill in the blank)",
+                  "options": ["screening", "scoping", "reporting", "review"],
+                  "correct": "screening"
+              },
+              {
+                  "index": 8,
+                  "question": "“the extent to which a chemical is available for uptake into an organism” is",
+                  "options": ["bioavailability", "bioaccumulation", "biomagnification", "bioresponse"],
+                  "correct": "bioavailability"
+              },
+              {
+                  "index": 9,
+                  "question": "Hydrocarbons derived from biological processes acting on mineral oils are",
+                  "options": ["petrogenic hydrocarbons", "pyrogenic hydrocarbons", "biogenic hydrocarbons", "chemoenic hydrocarbons"],
+                  "correct": "biogenic hydrocarbons"
+              },
+              {
+                  "index": 10,
+                  "question": "“Any changes in natural or human systems that inadvertently increase vulnerability to climatic stimuli; an adaptation that does not succeed in reducing vulnerability but increases it instead” is a definition for",
+                  "options": ["adaptation", "mitigation", "maladaptation", "malmitigation"],
+                  "correct": "maladaptation"
+              }
+          ]
+      }
+  ]
+}

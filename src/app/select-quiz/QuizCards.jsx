@@ -16,18 +16,18 @@ export const quizzes = [
     title: "Conservation Economics",
     description:
       "Weeks 0-12 for the NPTEL course Conservation Economics",
-    link: "https://stripe.com",
+    link: "/select-quiz/conservation-econ/",
   },
   {
     title: "Wildlife Ecology",
     description:
       "Weeks 0-12 for the NPTEL course - Wildlife Ecology",
-    link: "https://netflix.com",
+      link: "#",
   },
   {
     title: "More Quizzes Coming Soon",
     description:
       "Stay Tuned...",
-    link: "https://netflix.com",
+    link: "#",
   },
 ];

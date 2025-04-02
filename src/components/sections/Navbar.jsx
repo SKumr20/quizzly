@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import Title from "../ui/Title";
+import GithubButton from "../ui/GithubButton";
+import { Toggle } from "../ui/toggle";
 
 const Navbar = () => {
   return (
@@ -33,7 +35,8 @@ const Navbar = () => {
 
       </div>
       {/* Right Side Div */}
-      <div className="flex">
+      <div className="flex items-center gap-2">
+        <GithubButton className="hidden sm:block" />
         {/* Small device toggle with ToggleDarkmode next to it */}
         <div className="md:hidden flex items-center gap-2">
           <Sheet>

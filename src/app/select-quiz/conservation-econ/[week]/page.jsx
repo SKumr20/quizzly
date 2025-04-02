@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { toast } from "sonner";
 
 export default function QuizPage() {
   const searchParams = useSearchParams();
@@ -29,6 +30,7 @@ export default function QuizPage() {
         setQuestions(quiz.questions);
       } catch (error) {
         console.error("Error fetching quiz data:", error);
+        toast(error.message);
         setQuestions([]); // Prevents crashing
       }
     }
@@ -60,6 +62,20 @@ export default function QuizPage() {
 
     setResults(newResults);
     setScore(newScore);
+ 
+    // Score Toast
+    toast(<p>Your Score is: {newScore} / {questions.length}</p>, {
+      action: {
+        label: "Try Again",
+        onClick: () => handleReset(),
+      },
+      position: "top-right",
+    })
+
+          // <div>
+      //   <p>Your Score: {newScore} / {questions.length}</p>
+      //   <Button onClick={handleReset} className="mt-2">Try Again</Button>
+      // </div>
   };
 
   const handleReset = () => {

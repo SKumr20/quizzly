@@ -2,6 +2,7 @@ import "@/app/styles/globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/sections/Navbar";
+import { Toaster } from "@/components/ui/sonner"
 
 
 const inter = Inter({subsets: ['latin']});
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
               {children}  
             </main>
           </div>
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

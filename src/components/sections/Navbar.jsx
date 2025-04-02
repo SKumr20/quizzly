@@ -29,11 +29,6 @@ const Navbar = () => {
                 Get Started
             </Link>
           </Button>
-          <Button variant="ghost" className="text-sm">
-            <Link href='/experience'>
-              Experience
-            </Link>
-          </Button>
         </div>
 
       </div>
@@ -57,19 +52,14 @@ const Navbar = () => {
                   </SheetClose>
                 </Link>
                 
-                <SheetClose asChild>
-                  <Button variant="ghost" className="text-md w-full justify-center">
-                    Projects
-                  </Button>
-                </SheetClose>
-                
-                <Link href='/experience' className="w-full text-center">
+                <Link href="/select-quiz">
                   <SheetClose asChild>
                     <Button variant="ghost" className="text-md w-full justify-center">
-                      Experience
+                      Get Started
                     </Button>
                   </SheetClose>
                 </Link>
+
               </div>
             </SheetContent>
           </Sheet>

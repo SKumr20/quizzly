@@ -71,11 +71,6 @@ export default function QuizPage() {
       },
       position: "top-right",
     })
-
-          // <div>
-      //   <p>Your Score: {newScore} / {questions.length}</p>
-      //   <Button onClick={handleReset} className="mt-2">Try Again</Button>
-      // </div>
   };
 
   const handleReset = () => {
@@ -92,7 +87,7 @@ export default function QuizPage() {
         {questions.length > 0 ? (
           questions.map((q, index) => (
             <div key={index} className="p-4 border rounded-lg">
-              <h2 className="font-semibold">{q.question}</h2>
+              <h2 className="font-semibold">Q{index + 1}. {q.question}</h2>
               <RadioGroup 
                 value={selectedAnswers[index] || ""} 
                 onValueChange={(value) => handleAnswerSelect(index, value)}

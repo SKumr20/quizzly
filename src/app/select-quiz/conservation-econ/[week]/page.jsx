@@ -17,10 +17,9 @@ export default function QuizPage() {
 
   const fetchQuestions = async () => {
     try {
-      const res = await fetch(`/data/quizzes/${week}.json`);
-      if (!res.ok) throw new Error(`Failed to load ${week}.json`);
+      const res = await import(`@/data/quizzes/${week}.json`); // ✅ Correct path
+      const data = res.default; // ✅ JSON imports return default
   
-      const data = await res.json();
       console.log("Fetched quiz data:", data);
   
       const quizData = data.quizzes.find(q => q.title.toLowerCase() === week.toLowerCase());
@@ -29,9 +28,8 @@ export default function QuizPage() {
         throw new Error("Invalid quiz format");
       }
   
-      // Shuffle the questions
+      // Shuffle questions
       const shuffledQuestions = [...quizData.questions].sort(() => Math.random() - 0.5);
-  
       setQuestions(shuffledQuestions);
     } catch (error) {
       console.error("Error fetching quiz data:", error);
@@ -39,6 +37,7 @@ export default function QuizPage() {
       setQuestions([]);
     }
   };
+  
   
   useEffect(() => {
     fetchQuestions();

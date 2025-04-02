@@ -33,7 +33,7 @@ export const HoverEffect = ({
                 }}
                 exit={{
                   opacity: 0,
-                  transition: { duration: 0.15 },
+                  transition: { duration: 0.15, delay: 2},
                 }} />
             )}
           </AnimatePresence>

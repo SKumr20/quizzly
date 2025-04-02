@@ -15,7 +15,7 @@ export const quizzes = [
   {
     title: "Week 1",
     description: "What is Economics?",
-    link: "/select-quiz/conservation-econ/",
+    link: "/select-quiz/conservation-econ/week1",
   },
   {
     title: "Week 2",

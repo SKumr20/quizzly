@@ -91,11 +91,11 @@ export default function QuizPage() {
         {questions.length > 0 ? (
           questions.map((q, index) => (
             <div key={index} className="p-4 border rounded-lg">
-              <h2 className="font-semibold">Q{index + 1}. {q.question}</h2>
+              <h2 className="font-semibold mb-4 ">Q{index + 1}. {q.question}</h2>
               <RadioGroup
                 value={selectedAnswers[index] || ""}
                 onValueChange={(value) => handleAnswerSelect(index, value)}
-                className="mt-2 space-y-2"
+                className="mt-2"
               >
                 {q.options.map((option, i) => (
                   <div key={i} className="flex items-center space-x-3">

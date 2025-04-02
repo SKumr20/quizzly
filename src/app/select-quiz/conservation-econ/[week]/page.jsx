@@ -1,15 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useSearchParams } from "next/navigation";
+import { useParams } from "next/navigation"; // ✅ Use useParams instead of useSearchParams
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { toast } from "sonner";
 
 export default function QuizPage() {
-  const searchParams = useSearchParams();
-  const week = searchParams.get("week") || "week1"; // Default to week1
-
+  const { week } = useParams(); // ✅ Get the week directly from the URL
   const [questions, setQuestions] = useState([]);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [results, setResults] = useState({});
@@ -20,29 +18,30 @@ export default function QuizPage() {
       try {
         const res = await fetch(`/data/quizzes/${week}.json`);
         if (!res.ok) throw new Error(`Failed to load ${week}.json`);
-
+  
         const data = await res.json();
         console.log("Fetched quiz data:", data);
-
-        const quiz = data.quizzes.find(q => q.title === week);
-        if (!quiz || !quiz.questions) throw new Error("Invalid quiz format");
-
-        setQuestions(quiz.questions);
+  
+        const quizData = data.quizzes.find(q => q.title.toLowerCase() === week.toLowerCase());
+  
+        if (!quizData || !quizData.questions) {
+          throw new Error("Invalid quiz format");
+        }
+  
+        setQuestions(quizData.questions);
       } catch (error) {
         console.error("Error fetching quiz data:", error);
         toast(error.message);
-        setQuestions([]); // Prevents crashing
+        setQuestions([]);
       }
     }
-
+  
     fetchQuestions();
   }, [week]);
+  
 
   const handleAnswerSelect = (index, value) => {
-    setSelectedAnswers(prev => ({
-      ...prev,
-      [index]: value,
-    }));
+    setSelectedAnswers(prev => ({ ...prev, [index]: value }));
   };
 
   const handleSubmit = (e) => {
@@ -62,15 +61,11 @@ export default function QuizPage() {
 
     setResults(newResults);
     setScore(newScore);
- 
-    // Score Toast
-    toast(<p>Your Score is: {newScore} / {questions.length}</p>, {
-      action: {
-        label: "Try Again",
-        onClick: () => handleReset(),
-      },
+
+    toast(<p>Your Score: {newScore} / {questions.length}</p>, {
+      action: { label: "Try Again", onClick: () => handleReset() },
       position: "top-right",
-    })
+    });
   };
 
   const handleReset = () => {
@@ -88,8 +83,8 @@ export default function QuizPage() {
           questions.map((q, index) => (
             <div key={index} className="p-4 border rounded-lg">
               <h2 className="font-semibold">Q{index + 1}. {q.question}</h2>
-              <RadioGroup 
-                value={selectedAnswers[index] || ""} 
+              <RadioGroup
+                value={selectedAnswers[index] || ""}
                 onValueChange={(value) => handleAnswerSelect(index, value)}
                 className="mt-2 space-y-2"
               >
@@ -112,9 +107,7 @@ export default function QuizPage() {
           <p>Loading questions...</p>
         )}
 
-        <Button type="submit" className="mt-6 w-full">
-          Submit Answers
-        </Button>
+        <Button type="submit" className="mt-6 w-full">Submit Answers</Button>
       </form>
 
       {score !== null && (

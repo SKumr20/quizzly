@@ -1,0 +1,79 @@
+{
+    "quizzes": [
+      {
+        "title": "week2",
+        "questions": [
+          {
+            "index": 1,
+            "question": "Which of these is not a pillar of sustainability?",
+            "options": ["Environmental sustainability", "Economic sustainability", "Trans-boundary sustainability", "Social sustainability"],
+            "correct": "Trans-boundary sustainability"
+          },
+          {
+            "index": 2,
+            "question": "The Trinity explosion of 1945 is taken as the beginning of the",
+            "options": ["Holocene", "Cenocene", "Anthropocene", "Eocene"],
+            "correct": "Anthropocene"
+          },
+          {
+            "index": 3,
+            "question": "According to Malthusian model,",
+            "options": [
+              "Population grows in geometric progression, food supply increases in arithmetic progression",
+              "Population grows in geometric progression, food supply increases in geometric progression",
+              "Population grows in arithmetic progression, food supply increases in arithmetic progression",
+              "Population grows in arithmetic progression, food supply increases in geometric progression"
+            ],
+            "correct": "Population grows in geometric progression, food supply increases in arithmetic progression"
+          },
+          {
+            "index": 4,
+            "question": "The demographic transition sees a society move from",
+            "options": [
+              "High birth rate, low death rate to low birth rate, high death rate",
+              "Low birth rate, high death rate to low birth rate, low death rate",
+              "High birth rate, high death rate to low birth rate, low death rate",
+              "High birth rate, high death rate to low birth rate, high death rate"
+            ],
+            "correct": "High birth rate, high death rate to low birth rate, low death rate"
+          },
+          {
+            "index": 5,
+            "question": "Which of these is a pillar of sustainability?",
+            "options": ["Social sustainability", "Industrial sustainability", "Agricultural sustainability", "Trans-boundary sustainability"],
+            "correct": "Social sustainability"
+          },
+          {
+            "index": 6,
+            "question": "Which of these is a preventive check according to Malthus?",
+            "options": ["Foresight", "Vice", "Misery", "Flood"],
+            "correct": "Foresight"
+          },
+          {
+            "index": 7,
+            "question": "The quantum of human impacts can be written as",
+            "options": ["I = P + A + T", "I = P X A + T", "I = P X A X T", "I = P + A X T"],
+            "correct": "I = P X A X T"
+          },
+          {
+            "index": 8,
+            "question": "The book 'An Essay on the Principle of Population' was written by",
+            "options": ["Darwin", "Malthus", "Spencer", "Owens"],
+            "correct": "Malthus"
+          },
+          {
+            "index": 9,
+            "question": "The logistic growth equation curve is",
+            "options": ["I-shaped", "J-shaped", "S-shaped", "U-shaped"],
+            "correct": "S-shaped"
+          },
+          {
+            "index": 10,
+            "question": "Which of these is a positive check according to Malthus?",
+            "options": ["Late marriage", "War", "Celibacy", "Moral restraint"],
+            "correct": "War"
+          }
+        ]
+      }
+    ]
+  }

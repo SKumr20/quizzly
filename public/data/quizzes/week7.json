@@ -1,0 +1,74 @@
+{
+    "quizzes": [
+        {
+            "title": "week7",
+            "questions": [
+                {
+                    "index": 1,
+                    "question": "The price of a good that prevails in the world market for that good is the definition of",
+                    "options": ["export price", "import price", "world price", "domestic price"],
+                    "correct": "world price"
+                },
+                {
+                    "index": 2,
+                    "question": "The area between the demand curve and the price is an indicator of",
+                    "options": ["consumer surplus", "producer surplus", "total surplus", "deadweight loss"],
+                    "correct": "consumer surplus"
+                },
+                {
+                    "index": 3,
+                    "question": "The amount a buyer is willing to pay for a good minus the amount the buyer actually pays for it is",
+                    "options": ["consumer surplus", "producer surplus", "total surplus", "deadweight loss"],
+                    "correct": "consumer surplus"
+                },
+                {
+                    "index": 4,
+                    "question": "The amount a seller is paid for a good minus the seller’s cost of providing it is",
+                    "options": ["consumer surplus", "producer surplus", "total surplus", "deadweight loss"],
+                    "correct": "producer surplus"
+                },
+                {
+                    "index": 5,
+                    "question": "Value to buyers - Cost to sellers is",
+                    "options": ["consumer surplus", "producer surplus", "total surplus", "deadweight loss"],
+                    "correct": "total surplus"
+                },
+                {
+                    "index": 6,
+                    "question": "The fall in total surplus that results from a market distortion, such as a tax is",
+                    "options": ["consumer surplus", "producer surplus", "total surplus", "deadweight loss"],
+                    "correct": "deadweight loss"
+                },
+                {
+                    "index": 7,
+                    "question": "Laffer's curve is the relationship between",
+                    "options": ["inflation and unemployment", "tax size and tax revenue", "producer surplus and consumer surplus", "tax size and deadweight loss"],
+                    "correct": "tax size and tax revenue"
+                },
+                {
+                    "index": 8,
+                    "question": "Imposition of tariff",
+                    "options": [
+                        "increases producer surplus and government revenue",
+                        "increases consumer surplus and government revenue",
+                        "increases producer surplus, consumer surplus and government revenue",
+                        "increases total surplus"
+                    ],
+                    "correct": "increases producer surplus and government revenue"
+                },
+                {
+                    "index": 9,
+                    "question": "The maximum amount that a buyer will pay for a good is",
+                    "options": ["willingness to pay", "market demand", "demand curve", "buyer’s surplus"],
+                    "correct": "willingness to pay"
+                },
+                {
+                    "index": 10,
+                    "question": "The area between the supply curve and the price is an indicator of",
+                    "options": ["consumer surplus", "producer surplus", "total surplus", "deadweight loss"],
+                    "correct": "producer surplus"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "quizzes": [
+      {
+        "title": "week4",
+        "questions": [
+          {
+            "index": 1,
+            "question": "Which of these is a deterministic factor?",
+            "options": ["environmental variation", "forest fire", "death rate", "diseases"],
+            "correct": "death rate"
+          },
+          {
+            "index": 2,
+            "question": "I tried growing vegetables under my teak plantation, but the vegetable plants died out. I should be concerned about",
+            "options": ["autophagy", "allelophagy", "autopathy", "allelopathy"],
+            "correct": "allelopathy"
+          },
+          {
+            "index": 3,
+            "question": "The movement of lions across the Gir landscape is an example of",
+            "options": ["diffusion", "secular dispersal", "jump dispersal", "drifting"],
+            "correct": "diffusion"
+          },
+          {
+            "index": 4,
+            "question": "The geographical distribution of a species will be controlled by that environmental factor for which the organism has the narrowest range of tolerance. This is the statement for",
+            "options": ["Liebig’s law of the minimum", "Liebig’s law of the maximum", "Shelford’s law of tolerance", "Shelford’s law of intolerance"],
+            "correct": "Shelford’s law of tolerance"
+          },
+          {
+            "index": 5,
+            "question": "The regular, seasonal movement of animals, often along fixed routes is called",
+            "options": ["translocation", "migration", "dispersal", "drifting"],
+            "correct": "migration"
+          },
+          {
+            "index": 6,
+            "question": "Which of these is a stochastic factor?",
+            "options": ["birth rate", "death rate", "population structure", "environmental fluctuation"],
+            "correct": "environmental fluctuation"
+          },
+          {
+            "index": 7,
+            "question": "The movement of individuals away from their place of birth or hatching or seed production into a new habitat or area to survive and reproduce is called",
+            "options": ["translocation", "migration", "dispersal", "drifting"],
+            "correct": "dispersal"
+          },
+          {
+            "index": 8,
+            "question": "Scarcity of food is a",
+            "options": ["chemical factor", "demographic factor", "push factor", "pull factor"],
+            "correct": "push factor"
+          },
+          {
+            "index": 9,
+            "question": "Which of these correctly represents the process of habitat fragmentation and loss?",
+            "options": [
+              "Original forest → Dissection → Perforation → Fragmentation → Attrition",
+              "Original forest → Dissection → Attrition → Fragmentation → Perforation",
+              "Original forest → Dissection → Perforation → Attrition → Fragmentation",
+              "Original forest → Dissection → Fragmentation → Perforation → Attrition"
+            ],
+            "correct": "Original forest → Dissection → Perforation → Fragmentation → Attrition"
+          },
+          {
+            "index": 10,
+            "question": "A root zone treatment plant is an example of",
+            "options": ["phytoremediation", "biological control", "biomagnification", "bioaccumulation"],
+            "correct": "phytoremediation"
+          }
+        ]
+      }
+    ]
+  }

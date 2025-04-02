@@ -1,0 +1,69 @@
+{
+    "quizzes": [
+        {
+            "title": "week6",
+            "questions": [
+                {
+                    "index": 1,
+                    "question": "The claim that, other things being equal, the quantity demanded of a good falls when the price of the good rises is a statement of",
+                    "options": ["law of demand", "law of supply", "law of quantity demanded", "law of quantity supplied"],
+                    "correct": "law of demand"
+                },
+                {
+                    "index": 2,
+                    "question": "A legal maximum on the price at which a good can be sold is",
+                    "options": ["price ceiling", "price floor", "selling ceiling", "selling floor"],
+                    "correct": "price ceiling"
+                },
+                {
+                    "index": 3,
+                    "question": "A good for which, other things being equal, an increase in income leads to a decrease in demand is",
+                    "options": ["normal good", "inferior good", "Giffen good", "common good"],
+                    "correct": "inferior good"
+                },
+                {
+                    "index": 4,
+                    "question": "A table that shows the relationship between the price of a good and the quantity supplied is",
+                    "options": ["demand table", "demand schedule", "supply table", "supply schedule"],
+                    "correct": "supply schedule"
+                },
+                {
+                    "index": 5,
+                    "question": "A graph of the relationship between the price of a good and the quantity demanded is",
+                    "options": ["demand curve", "supply curve", "Laffer's curve", "Phillips curve"],
+                    "correct": "demand curve"
+                },
+                {
+                    "index": 6,
+                    "question": "A table that shows the relationship between the price of a good and the quantity demanded is",
+                    "options": ["demand table", "demand schedule", "supply table", "supply schedule"],
+                    "correct": "demand schedule"
+                },
+                {
+                    "index": 7,
+                    "question": "A measure of how much the quantity demanded of one good responds to a change in the price of another good, computed as the percentage change in quantity demanded of the first good divided by the percentage change in price of the second good is",
+                    "options": ["price elasticity of demand", "income elasticity of demand", "cross-price elasticity of demand", "price elasticity of supply"],
+                    "correct": "cross-price elasticity of demand"
+                },
+                {
+                    "index": 8,
+                    "question": "Rice and wheat are",
+                    "options": ["substitutes", "complements", "club goods", "public goods"],
+                    "correct": "substitutes"
+                },
+                {
+                    "index": 9,
+                    "question": "A good for which, other things being equal, an increase in income leads to an increase in demand is",
+                    "options": ["normal good", "inferior good", "Giffen good", "common good"],
+                    "correct": "normal good"
+                },
+                {
+                    "index": 10,
+                    "question": "A measure of how much the quantity demanded of a good responds to a change in the price of that good, computed as the percentage change in quantity demanded divided by the percentage change in price is",
+                    "options": ["price elasticity of demand", "income elasticity of demand", "cross-price elasticity of demand", "price elasticity of supply"],
+                    "correct": "price elasticity of demand"
+                }
+            ]
+        }
+    ]
+}

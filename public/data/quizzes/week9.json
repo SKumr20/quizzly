@@ -1,0 +1,69 @@
+{
+    "quizzes": [
+        {
+            "title": "week9",
+            "questions": [
+                {
+                    "index": 1,
+                    "question": "costs that have already been committed and cannot be recovered are",
+                    "options": ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+                    "correct": "sunk costs"
+                },
+                {
+                    "index": 2,
+                    "question": "total revenue minus total cost, including both explicit and implicit costs is a definition of",
+                    "options": ["economic profit", "accounting profit", "profit", "loss"],
+                    "correct": "economic profit"
+                },
+                {
+                    "index": 3,
+                    "question": "the increase in total cost that arises from an extra unit of production are",
+                    "options": ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+                    "correct": "marginal costs"
+                },
+                {
+                    "index": 4,
+                    "question": "A monopolist firm’s profit is given by",
+                    "options": ["(Price - ATC) × Q", "(Price - Q) × ATC", "(ATC - Q) × Price", "Price × Q - ATC"],
+                    "correct": "(Price - ATC) × Q"
+                },
+                {
+                    "index": 5,
+                    "question": "Which of the following is true for a competitive firm?",
+                    "options": ["P > MR", "P > MC", "MR > MC", "MR = MC"],
+                    "correct": "MR = MC"
+                },
+                {
+                    "index": 6,
+                    "question": "the amount a firm receives for the sale of its output is a definition of",
+                    "options": ["total revenue", "total cost", "profit", "loss"],
+                    "correct": "total revenue"
+                },
+                {
+                    "index": 7,
+                    "question": "When the cost of production for a single firm is much lesser than the cost of production for competitive firms, we have a / an",
+                    "options": ["natural monopoly", "artificial monopoly", "oligopoly", "duopoly"],
+                    "correct": "natural monopoly"
+                },
+                {
+                    "index": 8,
+                    "question": "costs that do not vary with the quantity of output produced are",
+                    "options": ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+                    "correct": "fixed costs"
+                },
+                {
+                    "index": 9,
+                    "question": "costs that vary with the quantity of output produced are",
+                    "options": ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
+                    "correct": "variable costs"
+                },
+                {
+                    "index": 10,
+                    "question": "the increase in output that arises from an additional unit of input is",
+                    "options": ["marginal product", "marginal profit", "marginal loss", "marginal cost"],
+                    "correct": "marginal product"
+                }
+            ]
+        }
+    ]
+}

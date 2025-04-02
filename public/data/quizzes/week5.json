@@ -1,0 +1,69 @@
+{
+    "quizzes": [
+        {
+            "title": "week5",
+            "questions": [
+                {
+                    "index": 1,
+                    "question": "A measure of the responsiveness of quantity demanded or quantity supplied to a change in one of its determinants is",
+                    "options": ["elasticity", "responsivity", "demand-supply equilibrium", "pricing"],
+                    "correct": "elasticity"
+                },
+                {
+                    "index": 2,
+                    "question": "The ability to produce a good using fewer inputs than another producer is",
+                    "options": ["comparative advantage", "absolute advantage", "production advantage", "resource advantage"],
+                    "correct": "absolute advantage"
+                },
+                {
+                    "index": 3,
+                    "question": "Common resource goods are",
+                    "options": ["excludable, rival in consumption", "non-excludable, rival in consumption", "excludable, non-rival in consumption", "non-excludable, non-rival in consumption"],
+                    "correct": "non-excludable, rival in consumption"
+                },
+                {
+                    "index": 4,
+                    "question": "If private parties can bargain without cost over the allocation of resources, they can solve the problem of externalities on their own. This is a statement for",
+                    "options": ["Allocation theorem", "Phillips theorem", "Coase theorem", "Nash theorem"],
+                    "correct": "Coase theorem"
+                },
+                {
+                    "index": 5,
+                    "question": "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs is known as",
+                    "options": ["Good development", "Sustainable development", "Futuristic development", "Gandhian development"],
+                    "correct": "Sustainable development"
+                },
+                {
+                    "index": 6,
+                    "question": "Club goods are",
+                    "options": ["excludable, rival in consumption", "non-excludable, rival in consumption", "excludable, non-rival in consumption", "non-excludable, non-rival in consumption"],
+                    "correct": "excludable, non-rival in consumption"
+                },
+                {
+                    "index": 7,
+                    "question": "Which of these is not a method of internalisation of externalities?",
+                    "options": ["tradable pollution permits", "charities to social causes", "command-and-control policies", "free market"],
+                    "correct": "free market"
+                },
+                {
+                    "index": 8,
+                    "question": "Private goods are",
+                    "options": ["excludable, rival in consumption", "non-excludable, rival in consumption", "excludable, non-rival in consumption", "non-excludable, non-rival in consumption"],
+                    "correct": "excludable, rival in consumption"
+                },
+                {
+                    "index": 9,
+                    "question": "A simplified description, especially a mathematical one, of a system or process, to assist calculations and predictions is the definition of a / an",
+                    "options": ["equation", "model", "philosophy", "process dynamics"],
+                    "correct": "model"
+                },
+                {
+                    "index": 10,
+                    "question": "The impact of one person’s actions on the well-being of a bystander is",
+                    "options": ["actor-observer effect", "externality", "internality", "benefits principle"],
+                    "correct": "externality"
+                }
+            ]
+        }
+    ]
+}

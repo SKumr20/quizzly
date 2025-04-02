@@ -30,7 +30,10 @@ export default function QuizPage() {
           throw new Error("Invalid quiz format");
         }
   
-        setQuestions(quizData.questions);
+        // Shuffle the questions using Fisher-Yates algorithm
+        const shuffledQuestions = [...quizData.questions].sort(() => Math.random() - 0.5);
+  
+        setQuestions(shuffledQuestions);
       } catch (error) {
         console.error("Error fetching quiz data:", error);
         toast(error.message);
@@ -40,6 +43,7 @@ export default function QuizPage() {
   
     fetchQuestions();
   }, [week]);
+  
   
 
   const handleAnswerSelect = (index, value) => {

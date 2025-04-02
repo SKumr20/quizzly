@@ -14,50 +14,62 @@ export function ConservationWeeks() {
 export const quizzes = [
   {
     title: "Week 1",
+    description: "What is Economics?",
     link: "/select-quiz/conservation-econ/",
   },
   {
     title: "Week 2",
-      link: "#",
+    description: "What is Conservation?",
+    link: "#",
   },
   {
     title: "Week 3",
+    description: "Modern Impacts Necessitating Conservation",
     link: "#",
   },
   {
     title: "Week 4",
+    description: "Threats To Wildlife",
     link: "/select-quiz/conservation-econ/",
   },
   {
     title: "Week 5",
-      link: "#",
+    description: "How Can Economics Help?",
+    link: "#",
   },
   {
     title: "Week 6",
+    description: "Markets - Places Where Economics Works",
     link: "#",
   },
   {
     title: "Week 7",
+    description: "Markets, Welfare And Conservation",
     link: "/select-quiz/conservation-econ/",
   },
   {
     title: "Week 8",
-      link: "#",
+    description: "Public Sector And Conservation",
+    link: "#",
   },
   {
     title: "Week 9",
+    description: "Industrial Organization And Conservation",
     link: "#",
   },
   {
     title: "Week 10",
+    description: "Labour Market Economics And Conservation",
     link: "/select-quiz/conservation-econ/",
   },
   {
     title: "Week 11",
-      link: "#",
+    description: "Practical Issues In Economics And Conservation",
+    link: "#",
   },
   {
     title: "Week 12",
+    description: "Final Exam",
     link: "#",
   },
 ];

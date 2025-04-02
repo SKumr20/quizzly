@@ -5,12 +5,14 @@ import { useParams } from "next/navigation"; // ✅ Use useParams instead of use
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { toast } from "sonner";
+import { Check, XIcon } from "lucide-react";
 
 export default function QuizPage() {
   const { week } = useParams(); // ✅ Get the week directly from the URL
   const [questions, setQuestions] = useState([]);
   const [selectedAnswers, setSelectedAnswers] = useState({});
-  const [results, setResults] = useState({});
+  const [finalAnswers, setFinalAnswers] = useState(null);
+  const [results, setResults] = useState(null);
   const [score, setScore] = useState(null);
 
   useEffect(() => {
@@ -41,6 +43,7 @@ export default function QuizPage() {
   
 
   const handleAnswerSelect = (index, value) => {
+    if (finalAnswers) return; // Prevent selection change after submission
     setSelectedAnswers(prev => ({ ...prev, [index]: value }));
   };
 
@@ -59,6 +62,7 @@ export default function QuizPage() {
       }
     });
 
+    setFinalAnswers({ ...selectedAnswers }); // Store final answers to prevent changes
     setResults(newResults);
     setScore(newScore);
 
@@ -70,7 +74,8 @@ export default function QuizPage() {
 
   const handleReset = () => {
     setSelectedAnswers({});
-    setResults({});
+    setFinalAnswers(null);
+    setResults(null);
     setScore(null);
   };
 
@@ -90,24 +95,25 @@ export default function QuizPage() {
               >
                 {q.options.map((option, i) => (
                   <div key={i} className="flex items-center space-x-3">
-                    <RadioGroupItem value={option} />
+                    <RadioGroupItem value={option} disabled={!!finalAnswers} />
                     <span className="text-sm font-medium">{option}</span>
+                    {results && finalAnswers && finalAnswers[index] === option && (
+                      <span className="ml-2 text-lg">
+                        {results[index] === "correct" ? <Check className="text-green-600" /> : <XIcon className="text-red-600" />}
+                      </span>
+                    )}
                   </div>
                 ))}
               </RadioGroup>
-
-              {results[index] && (
-                <span className="ml-4 text-lg">
-                  {results[index] === "correct" ? "✅" : "❌"}
-                </span>
-              )}
             </div>
           ))
         ) : (
           <p>Loading questions...</p>
         )}
 
-        <Button type="submit" className="mt-6 w-full">Submit Answers</Button>
+        <Button type="submit" className="mt-6 w-full" disabled={!!finalAnswers}>
+          Submit Answers
+        </Button>
       </form>
 
       {score !== null && (

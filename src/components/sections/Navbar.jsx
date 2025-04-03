@@ -13,6 +13,7 @@ import Link from "next/link";
 import Title from "../ui/Title";
 import GithubButton from "../ui/GithubButton";
 import { Separator } from "../ui/separator";
+import VisitorCount from "./VisitorCount";
 
 const Navbar = () => {
   return (
@@ -37,6 +38,7 @@ const Navbar = () => {
         {/* Right Side Div */}
         <div className="flex items-center gap-2">
           <GithubButton className="hidden sm:block" />
+          <VisitorCount />
           {/* Small device toggle with ToggleDarkmode next to it */}
           <div className="md:hidden flex items-center gap-2">
             <Sheet>

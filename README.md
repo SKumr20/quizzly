@@ -18,3 +18,7 @@
  * NextJS, with React
  * TailwindCSS
  * MagicUI, ShadCN, AceternityUI
+
+### Backend
+
+* Firebase - For visitor count

@@ -1,24 +1,26 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useParams } from "next/navigation"; // ✅ Use useParams instead of useSearchParams
+import { useParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { toast } from "sonner";
 import { Check, XIcon } from "lucide-react";
+import { AnimatedSubscribeButton } from "@/components/magicui/animated-subscribe-button";
 
 export default function QuizPage() {
-  const { week } = useParams(); // ✅ Get the week directly from the URL
+  const { week } = useParams();
   const [questions, setQuestions] = useState([]);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [finalAnswers, setFinalAnswers] = useState(null);
   const [results, setResults] = useState(null);
   const [score, setScore] = useState(null);
+  const [isSubmittedButton, setIsSubmittedButton] = useState(false);
 
   const fetchQuestions = async () => {
     try {
-      const res = await import(`@/data/quizzes/${week}.json`); // ✅ Correct path
-      const data = res.default; // ✅ JSON imports return default
+      const res = await import(`@/data/quizzes/${week}.json`);
+      const data = res.default;
   
       console.log("Fetched quiz data:", data);
   
@@ -38,12 +40,10 @@ export default function QuizPage() {
     }
   };
   
-  
   useEffect(() => {
     fetchQuestions();
   }, [week]);
   
-
   const handleAnswerSelect = (index, value) => {
     if (finalAnswers) return; // Prevent selection change after submission
     setSelectedAnswers(prev => ({ ...prev, [index]: value }));
@@ -80,11 +80,12 @@ export default function QuizPage() {
     setResults(null);
     setScore(null);
     fetchQuestions();
+    setIsSubmittedButton(false);
   };
 
   return (
     <div className="max-w-3xl mx-auto p-6">
-      <h1 className="text-2xl font-bold mb-6">Quiz for {week.replace("week", "Week ")}</h1>
+      <h1 className="text-2xl font-bold mb-6 text-center">Quiz for {week.replace("week", "Week ")}</h1>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {questions.length > 0 ? (
@@ -111,20 +112,29 @@ export default function QuizPage() {
             </div>
           ))
         ) : (
-          <p>Loading questions...</p>
+          <p className="text-center">Loading questions...</p>
         )}
 
-        <Button type="submit" className="mt-6 w-full" disabled={!!finalAnswers}>
-          Submit Answers
-        </Button>
-      </form>
+        <div className="flex flex-col items-center mt-8 space-y-4">
+        <AnimatedSubscribeButton 
+          type="submit"
+          disabled={!!finalAnswers}
+          subscribeStatus={isSubmittedButton}
+          setSubscribeStatus={setIsSubmittedButton}
+          onClick={(e) => !finalAnswers && handleSubmit(e)}
+        >
+          <span>Submit Answers</span>
+          <span>Submitted!</span>
+        </AnimatedSubscribeButton>
 
-      {score !== null && (
-        <div className="mt-4 text-center">
-          <p className="text-lg font-semibold">Your Score: {score} / {questions.length}</p>
-          <Button onClick={handleReset} className="mt-4">Try Again</Button>
+          {score !== null && (
+            <div className="text-center">
+              <p className="text-lg font-semibold">Your Score: {score} / {questions.length}</p>
+              <Button onClick={handleReset} className="mt-4">Try Again</Button>
+            </div>
+          )}
         </div>
-      )}
+      </form>
     </div>
   );
 }

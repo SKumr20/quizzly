@@ -1,5 +1,5 @@
 import { db } from "@/services/firebaseConfig";
-import { ref, onValue, set } from "firebase/database";
+import { ref, get, set, onValue } from "firebase/database";
 
 export const trackVisitor = async () => {
   const countRef = ref(db, "visitorCount");
@@ -8,12 +8,12 @@ export const trackVisitor = async () => {
   const snapshot = await get(countRef);
   let currentCount = snapshot.exists() ? snapshot.val() : 0;
 
-  // Increment the count
-  await update(countRef, { count: currentCount + 1 });
+  // Increment the count in the database
+  await set(countRef, currentCount + 1);
 
   return new Promise((resolve) => {
     onValue(countRef, (snapshot) => {
-      resolve(snapshot.val()?.count || 0);
+      resolve(snapshot.val() || 0);
     });
   });
 };

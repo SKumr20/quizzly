@@ -1,6 +1,8 @@
+import { HeroLamp } from "../ui/HeroLamp"
+
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <HeroLamp />
   )
 }
 

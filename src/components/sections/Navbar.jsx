@@ -12,65 +12,66 @@ import {
 import Link from "next/link";
 import Title from "../ui/Title";
 import GithubButton from "../ui/GithubButton";
-import { Toggle } from "../ui/toggle";
+import { Separator } from "../ui/separator";
 
 const Navbar = () => {
   return (
-    <div className="flex bg-background justify-between items-center p-8">
-      <div className="flex justify-center items-center">
-        <Title />
-        {/* Visible on bigger devices */}
-        <div className="hidden md:flex ml-2 justify-center items-center gap-2">
-          <Button variant="ghost" className="text-sm">
-            <Link href='/'>
-              Home
-            </Link>
-          </Button>
-          <Button variant="ghost" className="text-sm">
-            <Link href='/select-quiz'>
+    <div className="fixed top-0 left-0 z-50 right-0 bg-background">
+      <div className="flex justify-between items-center p-5">
+        <div className="flex justify-center items-center">
+          <Title />
+          {/* Visible on bigger devices */}
+          <div className="hidden md:flex ml-2 justify-center items-center gap-2">
+            <Button variant="ghost" className="text-sm">
+              <Link href='/'>
+                Home
+              </Link>
+            </Button>
+            <Button variant="ghost" className="text-sm">
+              <Link href='/select-quiz'>
                 Get Started
-            </Link>
-          </Button>
+              </Link>
+            </Button>
+          </div>
         </div>
-
-      </div>
-      {/* Right Side Div */}
-      <div className="flex items-center gap-2">
-        <GithubButton className="hidden sm:block" />
-        {/* Small device toggle with ToggleDarkmode next to it */}
-        <div className="md:hidden flex items-center gap-2">
-          <Sheet>
-            <SheetTrigger>
-              <Button variant="ghost">
-                <Menu className="scale-120" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent>
-              <div className="flex flex-col items-center p-6 w-full mt-5 space-y-4">
-                <Link href='/' className="w-full text-center">
-                  <SheetClose asChild>
-                    <Button variant="ghost" className="text-md w-full justify-center">
-                      Home
-                    </Button>
-                  </SheetClose>
-                </Link>
-                
-                <Link href="/select-quiz">
-                  <SheetClose asChild>
-                    <Button variant="ghost" className="text-md w-full justify-center">
-                      Get Started
-                    </Button>
-                  </SheetClose>
-                </Link>
-
-              </div>
-            </SheetContent>
-          </Sheet>
+        {/* Right Side Div */}
+        <div className="flex items-center gap-2">
+          <GithubButton className="hidden sm:block" />
+          {/* Small device toggle with ToggleDarkmode next to it */}
+          <div className="md:hidden flex items-center gap-2">
+            <Sheet>
+              <SheetTrigger>
+                <Button variant="ghost">
+                  <Menu className="scale-120" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent>
+                <div className="flex flex-col items-center p-6 w-full mt-5 space-y-4">
+                  <Link href='/' className="w-full text-center">
+                    <SheetClose asChild>
+                      <Button variant="ghost" className="text-md w-full justify-center">
+                        Home
+                      </Button>
+                    </SheetClose>
+                  </Link>
+                  
+                  <Link href="/select-quiz">
+                    <SheetClose asChild>
+                      <Button variant="ghost" className="text-md w-full justify-center">
+                        Get Started
+                      </Button>
+                    </SheetClose>
+                  </Link>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+          <ToggleDarkmode />
         </div>
-        <ToggleDarkmode />
       </div>
-      
+      <Separator />
     </div>
   );
 };
+
 export default Navbar;

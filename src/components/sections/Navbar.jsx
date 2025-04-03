@@ -22,7 +22,7 @@ const Navbar = () => {
           <Title />
           {/* Visible on bigger devices */}
           <div className="hidden md:flex ml-2 justify-center items-center gap-2">
-            <Button variant="ghost" className="text-sm">
+            <Button variant="ghost" className="text-sm text-foreground">
               <Link href='/'>
                 Home
               </Link>

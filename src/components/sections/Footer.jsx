@@ -29,11 +29,11 @@ const Footer = () => {
       </div>
       <div className="flex items-center gap-x-4 gap-y-2">
         <div className="flex items-center justify-center space-x-2">
-          <FaRegStar size="15px" className="text-yellow-500" />
+          <FaRegStar size="15px" className="text-yellow-500 hover:text-black dark:hover:text-white cursor-pointer" />
           <p className="text-xs leading-none">{stars}</p>
         </div>
         <div className="flex items-center justify-center space-x-2">
-          <FaCodeBranch size="13px" className="text-yellow-500"  />
+          <FaCodeBranch size="13px" className="text-yellow-500 hover:text-black dark:hover:text-white cursor-pointer" />
           <p className="text-xs leading-none">{forks}</p>
         </div>
       </div>

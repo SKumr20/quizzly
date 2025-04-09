@@ -5,21 +5,21 @@
             "questions": [
                 {
                     "index": 1,
-                    "question": "costs that have already been committed and cannot be recovered are",
-                    "options": ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
-                    "correct": "sunk costs"
+                    "question": "Costs that have already been committed and cannot be recovered are",
+                    "options": ["Fixed costs", "Variable costs", "Marginal costs", "Sunk costs"],
+                    "correct": "Sunk costs"
                 },
                 {
                     "index": 2,
-                    "question": "total revenue minus total cost, including both explicit and implicit costs is a definition of",
-                    "options": ["economic profit", "accounting profit", "profit", "loss"],
-                    "correct": "economic profit"
+                    "question": "Total revenue minus total cost, including both explicit and implicit costs is a definition of",
+                    "options": ["Economic profit", "Accounting profit", "Profit", "Loss"],
+                    "correct": "Economic profit"
                 },
                 {
                     "index": 3,
-                    "question": "the increase in total cost that arises from an extra unit of production are",
-                    "options": ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
-                    "correct": "marginal costs"
+                    "question": "The increase in total cost that arises from an extra unit of production are",
+                    "options": ["Fixed costs", "Variable costs", "Marginal costs", "Sunk costs"],
+                    "correct": "Marginal costs"
                 },
                 {
                     "index": 4,
@@ -35,9 +35,9 @@
                 },
                 {
                     "index": 6,
-                    "question": "the amount a firm receives for the sale of its output is a definition of",
-                    "options": ["total revenue", "total cost", "profit", "loss"],
-                    "correct": "total revenue"
+                    "question": "The amount a firm receives for the sale of its output is a definition of",
+                    "options": ["Total revenue", "Total cost", "Profit", "Loss"],
+                    "correct": "Total revenue"
                 },
                 {
                     "index": 7,
@@ -47,19 +47,19 @@
                 },
                 {
                     "index": 8,
-                    "question": "costs that do not vary with the quantity of output produced are",
+                    "question": "Costs that do not vary with the quantity of output produced are",
                     "options": ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
                     "correct": "fixed costs"
                 },
                 {
                     "index": 9,
-                    "question": "costs that vary with the quantity of output produced are",
+                    "question": "Costs that vary with the quantity of output produced are",
                     "options": ["fixed costs", "variable costs", "marginal costs", "sunk costs"],
                     "correct": "variable costs"
                 },
                 {
                     "index": 10,
-                    "question": "the increase in output that arises from an additional unit of input is",
+                    "question": "The increase in output that arises from an additional unit of input is",
                     "options": ["marginal product", "marginal profit", "marginal loss", "marginal cost"],
                     "correct": "marginal product"
                 }

@@ -1,0 +1,80 @@
+{
+    "quizzes": [
+      {
+        "title": "week10",
+        "questions": [
+          {
+            "index": 1,
+            "question": "“An absolute level of income set by the government for each family size below which a family is deemed to be in poverty” is known as",
+            "options": ["Deprivation Line", "Poverty Line", "Deprivation Index", "Poverty Index"],
+            "correct": "Poverty Line"
+          },
+          {
+            "index": 2,
+            "question": "Absolute poverty depends",
+            "options": [
+              "On Income But Not On Access To Social Services",
+              "Not On Income But On Access To Social Services",
+              "On Income And On Access To Social Services",
+              "Neither On Income Nor On Access To Social Services"
+            ],
+            "correct": "On Income And On Access To Social Services"
+          },
+          {
+            "index": 3,
+            "question": "“The equipment and structures used to produce goods and services” is the definition of",
+            "options": ["Tools", "Machinery", "Capital", "Factors Of Production"],
+            "correct": "Capital"
+          },
+          {
+            "index": 4,
+            "question": "“Above-equilibrium wages paid by firms to increase worker productivity” are known as",
+            "options": ["Compensating Wage", "Efficiency Wage", "Productivity Wage", "Retention Wage"],
+            "correct": "Efficiency Wage"
+          },
+          {
+            "index": 5,
+            "question": "“Government policy aimed at protecting people against the risk of adverse events” is",
+            "options": ["Social Protection", "Social Insurance", "Social Security", "Socialism"],
+            "correct": "Social Insurance"
+          },
+          {
+            "index": 6,
+            "question": "“A difference in wages that arises to offset the non-monetary characteristics of different jobs” is known as",
+            "options": ["Differentiating Differential", "Compensating Differential", "Differentiating Integral", "Compensating Integral"],
+            "correct": "Compensating Differential"
+          },
+          {
+            "index": 7,
+            "question": "For a competitive and profit-maximising firm,",
+            "options": [
+              "Each Factor’s Rental Price < The Value Of The Marginal Product For That Factor",
+              "Each Factor’s Rental Price = The Value Of The Marginal Product For That Factor",
+              "Each Factor’s Rental Price > The Value Of The Marginal Product For That Factor",
+              "Each Factor’s Rental Price = The Value Of The Average Product For That Factor"
+            ],
+            "correct": "Each Factor’s Rental Price = The Value Of The Marginal Product For That Factor"
+          },
+          {
+            "index": 8,
+            "question": "“A condition characterised by severe deprivation of basic human needs, including food, safe drinking water, sanitation facilities, health, shelter, education and information” is known as",
+            "options": ["Absolute Poverty", "Relative Poverty", "Median Poverty", "Poverty Line"],
+            "correct": "Absolute Poverty"
+          },
+          {
+            "index": 9,
+            "question": "“A condition where a household’s income is lower than the median income in the particular country” is known as",
+            "options": ["Absolute Poverty", "Relative Poverty", "Median Poverty", "Poverty Line"],
+            "correct": "Relative Poverty"
+          },
+          {
+            "index": 10,
+            "question": "“The increase in the amount of output from an additional unit of labor” is",
+            "options": ["Marginal Product Of Labour", "Marginal Product Of Input", "Average Product Of Labour", "Average Product Of Input"],
+            "correct": "Marginal Product Of Labour"
+          }
+        ]
+      }
+    ]
+  }
+  

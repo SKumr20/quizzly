@@ -5,7 +5,6 @@ import Navbar from "@/components/sections/Navbar";
 import { Toaster } from "@/components/ui/sonner";
 import Footer from "@/components/sections/Footer";
 
-
 const inter = Inter({subsets: ['latin']});
 
 export const metadata = {

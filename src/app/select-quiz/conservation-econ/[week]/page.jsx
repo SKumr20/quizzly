@@ -61,11 +61,17 @@ export default function QuizPage() {
     let newScore = 0;
 
     questions.forEach((q, index) => {
-      if (selectedAnswers[index] === q.correct) {
-        newResults[index] = "correct";
-        newScore++;
+      // Check if the question was answered
+      if (selectedAnswers[index]) {
+        if (selectedAnswers[index] === q.correct) {
+          newResults[index] = "correct";
+          newScore++;
+        } else {
+          newResults[index] = "wrong";
+        }
       } else {
-        newResults[index] = "wrong";
+        // Question not answered
+        newResults[index] = "unanswered";
       }
     });
 
@@ -101,6 +107,14 @@ export default function QuizPage() {
           {questions.map((q, index) => (
             <div key={index} className="p-4 border rounded-lg">
               <h2 className="font-semibold mb-4">Q{index + 1}. {q.question}</h2>
+              
+              {/* Show message for unanswered questions after submission */}
+              {results && results[index] === "unanswered" && (
+                <div className="mb-4 text-amber-500 text-sm font-medium">
+                  Not answered. The correct answer is: {q.correct}
+                </div>
+              )}
+              
               <RadioGroup
                 value={selectedAnswers[index] || ""}
                 onValueChange={(value) => handleAnswerSelect(index, value)}
@@ -110,14 +124,25 @@ export default function QuizPage() {
                   <div key={i} className="flex items-center space-x-3">
                     <RadioGroupItem value={option} disabled={!!finalAnswers} />
                     <span className="text-sm font-medium">{option}</span>
-                    {results && finalAnswers && finalAnswers[index] === option && (
-                      <span className="ml-2 text-lg">
-                        {results[index] === "correct" ? (
-                          <Check className="text-green-600" />
-                        ) : (
-                          <XIcon className="text-red-600" />
+                    {results && (
+                      <>
+                        {/* Correct answer */}
+                        {finalAnswers[index] === option && results[index] === "correct" && (
+                          <Check className="ml-2 text-lg text-green-600" />
                         )}
-                      </span>
+                        
+                        {/* Show X mark if this was the user's answer and it was wrong */}
+                        {finalAnswers[index] === option && results[index] === "wrong" && (
+                          <XIcon className="ml-2 text-lg text-red-600" />
+                        )}
+                        
+                        {/* Show check mark if this is the correct answer and user got it wrong */}
+                        {option === q.correct && finalAnswers[index] !== option && results[index] === "wrong" && (
+                          <Check className="ml-2 text-lg text-green-600" />
+                        )}
+                        
+                        {/* No icons for unanswered questions */}
+                      </>
                     )}
                   </div>
                 ))}

@@ -90,7 +90,9 @@ export default function QuizPage() {
 
   return (
     <div className="max-w-3xl mx-auto p-6 mt-2">
-      <h1 className="text-2xl font-bold mb-6 text-center">Quiz For {week.replace("week", "Week ")}</h1>
+      <h1 className="text-2xl font-bold mb-6 text-center">
+        Quiz For {week === "finalexam" ? "Final Exam" : week.replace("week", "Week").charAt(0).toUpperCase() + week.slice(1)}
+      </h1>
 
       {isLoading ? (
         <QuizLoader onFinish={() => setIsLoading(false)} />

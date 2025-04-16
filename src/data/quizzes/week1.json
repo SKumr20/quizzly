@@ -1,70 +1,79 @@
 {
-    "quizzes": [
-      {
-        "title": "week1",
-        "questions": [
-          {
-            "index": 1,
-            "question": "The ability to produce a good at a lower opportunity cost than another producer is a definition of",
-            "options": ["Real advantage", "Monetary advantage", "Comparative advantage", "Opportunity advantage"],
-            "correct": "Comparative advantage"
-          },
-          {
-            "index": 2,
-            "question": "Fluctuations in economic activity, such as employment and production, are referred to as",
-            "options": ["Business cycles", "Economic cycles", "Production cycles", "Market cycles"],
-            "correct": "Business cycles"
-          },
-          {
-            "index": 3,
-            "question": "The property of society getting the most it can from its scarce resources is a definition of",
-            "options": ["Efficiency", "Equality", "Prudence", "Sustainability"],
-            "correct": "Efficiency"
-          },
-          {
-            "index": 4,
-            "question": "In the word root for Economics, 'nemein' stands for",
-            "options": ["Together", "To keep", "House", "Manage"],
-            "correct": "Manage"
-          },
-          {
-            "index": 5,
-            "question": "Whatever must be given up to obtain some item is a definition of",
-            "options": ["Explicit costs", "Implicit costs", "Opportunity costs", "Phantom costs"],
-            "correct": "Opportunity costs"
-          },
-          {
-            "index": 6,
-            "question": "Rational decision making compares",
-            "options": ["Average benefits to average costs", "Average benefits to marginal costs", "Marginal benefits to average costs", "Marginal benefits to marginal costs"],
-            "correct": "Marginal benefits to marginal costs"
-          },
-          {
-            "index": 7,
-            "question": "Something that induces a person to act is a definition of",
-            "options": ["Enticement", "Attraction", "Incentive", "Occupation"],
-            "correct": "Incentive"
-          },
-          {
-            "index": 8,
-            "question": "Input costs that require an outlay of money are",
-            "options": ["Explicit costs", "Implicit costs", "Opportunity costs", "Phantom costs"],
-            "correct": "Explicit costs"
-          },
-          {
-            "index": 9,
-            "question": "The property of distributing economic prosperity uniformly among the members of society is a definition of",
-            "options": ["Efficiency", "Equality", "Prudence", "Sustainability"],
-            "correct": "Equality"
-          },
-          {
-            "index": 10,
-            "question": "The ability of an individual to own and exercise control over scarce resources is known as",
-            "options": ["Property rights", "Resource rights", "Individual rights", "Social rights"],
-            "correct": "Property rights"
-          }
-        ]
-      }
-    ]
-  }
-  
+  "quizzes": [
+    {
+      "title": "week1",
+      "questions": [
+        {
+          "index": 1,
+          "question": "In the word root for conservation, con stands for",
+          "options": ["together", "to keep", "house", "manage"],
+          "correct": "together"
+        },
+        {
+          "index": 2,
+          "question": "“The ability of a single economic actor (or small group of actors) to have a substantial influence on market prices” is known as",
+          "options": ["price power", "market power", "externality", "economic power"],
+          "correct": "market power"
+        },
+        {
+          "index": 3,
+          "question": "“An economy that allocates resources through the decentralised decisions of many firms and households as they interact in markets for goods and services” is a / an",
+          "options": ["urban economy", "rural economy", "planned economy", "market economy"],
+          "correct": "market economy"
+        },
+        {
+          "index": 4,
+          "question": "In the word root for conservation, servare stands for",
+          "options": ["together", "to keep", "house", "manage"],
+          "correct": "to keep"
+        },
+        {
+          "index": 5,
+          "question": "Which of these is true?",
+          "options": [
+            "Wants are unlimited, resources are unlimited",
+            "Wants are limited, resources are limited",
+            "Wants are unlimited, resources are limited",
+            "Wants are limited, resources are unlimited"
+          ],
+          "correct": "Wants are unlimited, resources are limited"
+        },
+        {
+          "index": 6,
+          "question": "“An increase in the overall level of prices in the economy” is",
+          "options": ["inflation", "deflation", "stagflation", "priceflation"],
+          "correct": "inflation"
+        },
+        {
+          "index": 7,
+          "question": "Phillips curve shows the relation between",
+          "options": [
+            "profit and loss",
+            "marked price and selling price",
+            "inflation rate and unemployment rate",
+            "electricity consumption and heat output"
+          ],
+          "correct": "inflation rate and unemployment rate"
+        },
+        {
+          "index": 8,
+          "question": "In the word root for Economics, oikos stands for",
+          "options": ["together", "to keep", "house", "manage"],
+          "correct": "house"
+        },
+        {
+          "index": 9,
+          "question": "Most of rational thinking occurs",
+          "options": ["before the margin", "at the margin", "after the margin", "none of these"],
+          "correct": "at the margin"
+        },
+        {
+          "index": 10,
+          "question": "Input costs that do not require an outlay of money are",
+          "options": ["explicit costs", "implicit costs", "opportunity costs", "phantom costs"],
+          "correct": "implicit costs"
+        }
+      ]
+    }
+  ]
+}

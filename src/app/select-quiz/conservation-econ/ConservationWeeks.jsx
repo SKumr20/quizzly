@@ -15,6 +15,7 @@ export function ConservationWeeks() {
 }
 
 export const quizzes = [
+  { title: "Week 0", description: "Practice/Intro Quiz", link: "week0" },
   { title: "Week 1", description: "What is Economics?", link: "week1" },
   { title: "Week 2", description: "What is Conservation?", link: "week2" },
   { title: "Week 3", description: "Modern Impacts Necessitating Conservation", link: "week3" },

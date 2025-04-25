@@ -28,5 +28,6 @@ export const quizzes = [
   { title: "Week 10", description: "Labour Market Economics And Conservation", link: "week10" },
   { title: "Week 11", description: "Practical Issues In Economics And Conservation", link: "week11" },
   { title: "Week 12", description: "Case Studies", link: "week12" },
-  { title: "Final Exam", description: 'Take the conmbined exam, with total 130 questions', link: "finalexam" } 
+  { title: "Extras", description: "Some Extra Questions Relvant for The Exam", link: "extras" },
+  { title: "Final Exam", description: 'Take the conmbined exam, with total 150+ questions', link: "finalexam" } 
 ];

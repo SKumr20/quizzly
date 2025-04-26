@@ -12,7 +12,7 @@
           {
             "index": 2,
             "question": "When a consumer is at risk of getting sold a good of cheap quality, that situation is called",
-            "options": ["NA", "NA", "NA", "NA"],
+            "options": ["Adverse Selection", "NA", "NA", "NA"],
             "correct": "Adverse selection"
           },
           {
@@ -42,7 +42,7 @@
           {
             "index": 7,
             "question": "Size of macrodebris w.r.t plastic",
-            "options": ["NA", "NA", "NA", "NA"],
+            "options": ["> 20mm", "NA", "NA", "NA"],
             "correct": "> 20mm"
           },
           {
@@ -54,7 +54,7 @@
           {
             "index": 9,
             "question": "A question was asked on something increasing",
-            "options": ["NA", "NA", "NA", "NA"],
+            "options": ["Escalating", "NA", "NA", "NA"],
             "correct": "Escalating"
           },
           {
@@ -78,7 +78,7 @@
           {
             "index": 13,
             "question": "Government policies for \"veil of ignorance\"",
-            "options": ["NA", "NA", "NA", "NA"],
+            "options": ["Policies focusing on fairness, equality, justice, or protecting the disadvantaged", "NA", "NA", "NA"],
             "correct": "Policies focusing on fairness, equality, justice, or protecting the disadvantaged"
           },
           {
